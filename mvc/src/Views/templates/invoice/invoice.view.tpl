@@ -64,4 +64,14 @@
     </form>
 </section>
 
-<
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const btnCancelar = document.getElementById("btnCancelar");
+        btnCancelar.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.assign("index.php?page=Invoices_Invoices");   
+ 
+        });
+    });
+</script>

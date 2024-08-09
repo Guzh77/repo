@@ -16,7 +16,7 @@
     {
       "id": "Menu_Invoices", 
       "nav_url": "index.php?page=Invoices_Invoices",
-      "nav_label": "<i class=\"fas fa-file-invoice\"></i>&nbsp;Facturas" 
+      "nav_label": "<i class=\"fas fa-file-Invoice\"></i>&nbsp;Facturas" 
     }
   ],
   "private": [

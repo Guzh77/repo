@@ -18,8 +18,7 @@ class Invoices extends Table {
                         InvoiceDate, 
                         OrderID, 
                         Amount, 
-                        Status 
-                    FROM Invoices";
+                        Status FROM Invoices";
         $sqlstrCount = "SELECT COUNT(*) as count FROM Invoices";
         $conditions = [];
         $params = [];
@@ -84,7 +83,6 @@ class Invoices extends Table {
         return self::executeNonQuery($sqlstr, $params);
     }
 
-    // Actualizar una factura existente
     public static function updateInvoice(
         int $invoiceId,
         string $invoiceDate,

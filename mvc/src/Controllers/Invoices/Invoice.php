@@ -25,7 +25,7 @@ class Invoice extends PublicController
         "InvoiceDate" => "",
         "OrderID" => 0,
         "Amount" => 0,
-        "Status" => ""
+        "Status" => "ACT"
     ];
 
     public function run(): void
@@ -41,7 +41,7 @@ class Invoice extends PublicController
             Renderer::render("invoices/invoice", $this->viewData);
         } catch (\Exception $ex) {
             Site::redirectToWithMsg(
-                "index.php?page=Invoices_Invoices", // Ajusta la página de redirección
+                "index.php?page=Invoices_Invoice", 
                 $ex->getMessage()
             );
         }
@@ -120,3 +120,5 @@ class Invoice extends PublicController
         $this->viewData["invoice"] = $this->invoice;
     }
 }
+
+?>
