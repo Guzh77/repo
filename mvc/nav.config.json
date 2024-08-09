@@ -12,6 +12,11 @@
       "id": "Menu_Products",
       "nav_url": "index.php?page=Products_Products",
       "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;WW Productos"
+    },
+    {
+      "id": "Menu_Invoices", 
+      "nav_url": "index.php?page=Invoices_Invoices",
+      "nav_label": "<i class=\"fas fa-file-invoice\"></i>&nbsp;Facturas" 
     }
   ],
   "private": [
